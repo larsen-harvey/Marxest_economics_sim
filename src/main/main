@@ -23,13 +23,10 @@ Notes:
 - If you lack some inputs, the system falls back to proxies (documented below).
 """
 from __future__ import annotations
-
 from datetime import date, datetime
 from typing import List, Optional, Dict, Any
-
 from fastapi import FastAPI, HTTPException, Body, Query
 from pydantic import BaseModel, Field
-
 from sqlalchemy import (
     create_engine, Column, Integer, Float, String, Date, ForeignKey, Boolean, func
 )
